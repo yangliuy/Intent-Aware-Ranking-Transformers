@@ -32,7 +32,7 @@ importance weighting scheme of different context utterances. Given input
 
 ## __Usage__
 
-First, please download data from this [Google Drive folder](https://drive.google.com/drive/folders/1iQugGNiLopseGdT-kuKbgR8vxDjsfXRf?usp=sharing) and
+First, please download data from this [Google Drive folder](https://drive.google.com/drive/folders/1ayXN6pgzxs7DP9iCO6JR-KXbQHPUOLXx?usp=sharing) and
 unzip it:
 
 ```
