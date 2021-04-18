@@ -19,7 +19,7 @@ IART is built on the top of the [DAM](https://github.com/baidu/Dialogue/tree/mas
 model incorporates intent-aware utterance attention to derive the
 importance weighting scheme of different context utterances. Given input
  context utterances and response candidates, we first generate representations from two different perspectives: user intent representations with a
- trained neural classifier and semantic information encoding with Transformers. Then self-attention and crossattention matching will be performed over
+ trained neural classifier and semantic information encoding with Transformers. Then self-attention and cross-attention matching will be performed over
   encoded representations from Transformers to  extract matching features.
   These matching features will be weighted by the intent-aware attention mechanism and aggregated into a matching tensor. Finally a two-layer 3D convolutional neural network will distill final representations over
   the matching tensor and generate the ranking score for the conversation context/ response candidate pair. The main difference between IART and
@@ -32,7 +32,7 @@ importance weighting scheme of different context utterances. Given input
 
 ## __Usage__
 
-First, please download data from this [Googel Drive folder](https://drive.google.com/drive/folders/1iQugGNiLopseGdT-kuKbgR8vxDjsfXRf?usp=sharing) and
+First, please download data from this [Google Drive folder](https://drive.google.com/drive/folders/1iQugGNiLopseGdT-kuKbgR8vxDjsfXRf?usp=sharing) and
 unzip it:
 
 ```
@@ -49,12 +49,12 @@ sh run.sh
 The code for data preprocessing is in the folder IART/conqa. The input data format is
 
 ```
-label \t context (utterances seperated by \t) \t response.
+label \t context (utterances separated by \t) \t response.
 ```
 
- To generate the pkl data files used for model training/testing, you need to firstly run the script conqa/data_preprocess_dam.py to do data preprocessing. After that you need to run the script conqa/transfer_mz_to_dam_format.py to transfer the preprocsed data in MatchZoo model format to the input data format of DAM/IART model.
+ To generate the pkl data files used for model training/testing, you need to firstly run the script conqa/data_preprocess_dam.py to do data preprocessing. After that you need to run the script conqa/transfer_mz_to_dam_format.py to transfer the preprocessed data in MatchZoo model format to the input data format of DAM/IART model.
 
-The user intent feature vectors output by the user intent classifier are stored in a seperate input text file. The format of the user intent vector should be
+The user intent feature vectors output by the user intent classifier are stored in a separate input text file. The format of the user intent vector should be
 
 ```
 UtteranceID_or_ResponseID \t intent_vector (12 dimensional real value vector for MS/UDC)
@@ -75,9 +75,9 @@ Q* denotes context utterances. D* denotes response candidates
 The following script can help you generate this vector file
 conqa/gen_user_intent_vector.py. You can also modify this script or write your own scripts to transfer the intent feature vectors for your own data sets to this format.
 
-## __Further Instructures on Training/Testing IART__
+## __Further Instructions on Training/Testing IART__
 
-The main scripts for training/testing IART model based on UDC and MSDialog data are main_udc.py and main_ms_v2.py respectively. With the right setting on the model configuration, you can start the model training basedon MSDialog data by running
+The main scripts for training/testing IART model based on UDC and MSDialog data are main_udc.py and main_ms_v2.py respectively. With the right setting on the model configuration, you can start the model training based on MSDialog data by running
 
 ```
 python main_ms_v2.py
@@ -157,7 +157,7 @@ The following article describes the IART model in detail.
 
 ## __Acknowledgement__
 
-IART is built based on the [DAM model](https://github.com/baidu/Dialogue/tree/master/DAM) relased by [Zhou et. al. ACL 2018](https://www.aclweb.org/anthology/P18-1103/). We thank the DAM authors for the effort on open sourcing their model code.
+IART is built based on the [DAM model](https://github.com/baidu/Dialogue/tree/master/DAM) released by [Zhou et. al. ACL 2018](https://www.aclweb.org/anthology/P18-1103/). We thank the DAM authors for the effort on open sourcing their model code.
 
 ## __Contact__
 
