@@ -77,7 +77,7 @@ conqa/gen_user_intent_vector.py. You can also modify this script or write your o
 
 ## __Further Instructions on Training/Testing IART__
 
-The main scripts for training/testing IART model based on UDC and MSDialog data are main_udc.py and main_ms_v2.py respectively. With the right setting on the model configuration, you can start the model training based on MSDialog data by running
+The main scripts for training/testing IART model based on UDC and [MSDialog](https://ciir.cs.umass.edu/downloads/msdialog/) data are main_udc.py and main_ms_v2.py respectively. With the right setting on the model configuration, you can start the model training based on [MSDialog](https://ciir.cs.umass.edu/downloads/msdialog/) data by running
 
 ```
 python main_ms_v2.py
