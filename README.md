@@ -139,7 +139,7 @@ For model testing, you need to additionally set init_model as the path of the be
 
 ## __Dependencies__
 
-- Python >= 2.7.3
+- Python 2.7.3
 - Tensorflow == 1.4
 
 ## __Citation__
